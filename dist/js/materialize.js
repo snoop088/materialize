@@ -6662,12 +6662,12 @@ if (Vel) {
               // * In Firefox stopPropagation() doesn’t prevent right-click events from bubbling,
               //   which causes the picker to unexpectedly close when right-clicking it. So make
               //   sure the event wasn’t a right-click.
-              if (target != ELEMENT && target != document && event.which != 3) {
+              // if (target != ELEMENT && target != document && event.which != 3) {
 
-                // If the target was the holder that covers the screen,
-                // keep the element focused to maintain tabindex.
-                P.close(target === P.$root.children()[0]);
-              }
+              //   // If the target was the holder that covers the screen,
+              //   // keep the element focused to maintain tabindex.
+              //   P.close(target === P.$root.children()[0]);
+              // } // FIX Date/ Time picker
             }).on('keydown.' + STATE.id, function (event) {
 
               var
