@@ -8920,7 +8920,7 @@ if (Vel) {
       if (this.isShown) {
         return;
       }
-    }, 0)
+    
 
     raiseCallback(this.options.beforeShow);
     $(':input').each(function () {
@@ -8999,7 +8999,7 @@ if (Vel) {
       }
     });
     raiseCallback(this.options.afterShow);
-  };
+  }, 200);
   // Hide popover
   ClockPicker.prototype.hide = function () {
     raiseCallback(this.options.beforeHide);
