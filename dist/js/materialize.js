@@ -8916,9 +8916,12 @@ if (Vel) {
   // Show popover
   ClockPicker.prototype.show = function (e) {
     // Not show again
-    if (this.isShown) {
-      return;
-    }
+    setTimeout(() => {
+      if (this.isShown) {
+        return;
+      }
+    }, 0)
+
     raiseCallback(this.options.beforeShow);
     $(':input').each(function () {
       $(this).attr('tabindex', -1);
