@@ -9110,7 +9110,7 @@ if (Vel) {
         }
       });
       raiseCallback(this.options.afterShow);
-    });
+    }, 200);
   }; // HERE
   // Hide popover
   ClockPicker.prototype.hide = function () {
